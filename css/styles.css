@@ -1,0 +1,361 @@
+*
+{
+    box-sizing: border-box;
+}
+
+body
+{
+    margin: 0;
+    padding: 0;
+}
+
+.clearfix:after
+{
+    display: table;
+    clear: both;
+
+    content: '';
+}
+
+.placeholder {
+  background: whitesmoke;
+
+}
+
+/* Reset `button` and button-style `input` default styles */
+/* https://codepen.io/terkel/pen/dvejH */
+
+input[type='submit'],
+input[type='reset'],
+input[type='button'],
+button
+{
+    /* cursor: default; */
+    font: inherit;
+    line-height: normal;
+
+    overflow: visible;
+
+    padding: 0;
+
+    -webkit-user-select: none; /* for button */
+       -moz-user-select: none;
+        -ms-user-select: none;
+
+    color: inherit;
+    border: 0;
+    background: none;
+
+    -webkit-appearance: button; /* for input */
+}
+input::-moz-focus-inner,
+button::-moz-focus-inner
+{
+    padding: 0;
+
+    border: 0;
+}
+
+/* Layout */
+
+.main-content
+{
+    width: 90%;
+    margin: 0 auto;
+    padding: 25px 0;
+}
+
+.grid {
+  width: 90%;
+  margin: 0 auto;
+}
+
+/* Typography and Buttons */
+
+h2
+{
+    font-family: 'Roboto Slab', serif;
+    font-size: 27px;
+    font-weight: 400;
+    line-height: 22px;
+
+    margin: 0 0 15px 0;
+}
+
+p
+{
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    line-height: 22px;
+
+    margin: 15px 0;
+}
+
+.link-button
+{
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+
+    display: inline-block;
+
+    padding: 11px;
+
+    text-decoration: none;
+    letter-spacing: .5px;
+    text-transform: uppercase;
+
+    color: black;
+    border: 2px solid rgba(31, 5, 5, .29);
+    box-shadow: inset 0 0 0 3px white,
+    inset 0 -23px #eee;
+}
+
+/* Page Navigation */
+.page-nav
+{
+    position: relative;
+
+    width: 90%;
+    height: 90px;
+    margin: 0 auto;
+    padding: 13px 0;
+}
+
+.home-link
+{
+    display: block;
+
+    width: 120px;
+    height: 60px;
+
+    text-indent: -999px;
+
+    background: url(../images/corwin-logo.svg) no-repeat left center;
+}
+
+.page-links-wrapper
+{
+    position: absolute;
+    top: 90px;
+    left: 110%;
+
+    width: 100%;
+    padding: 0 25px;
+
+    transition: all .25s;
+
+    opacity: 0;
+    background: white;
+}
+
+.page-links-wrapper a
+{
+    font-family: 'Roboto', sans-serif;
+    font-size: 13px;
+    font-weight: 700;
+
+    display: block;
+
+    padding: 20px 10px;
+
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+
+    color: black;
+    border-top: 1px solid grey;
+}
+
+.page-links-wrapper a:first-child
+{
+    border-top: none;
+}
+
+
+.page-links-wrapper a:hover
+{
+    color: red;
+}
+
+/* Hamburger Menu */
+/* http://codepen.io/RRoberts/pen/ZBYaJr */
+.show-menu-button
+{
+    position: absolute;
+    top: 10px;
+    right: 55px;
+
+    padding: 10px;
+
+}
+
+.show-menu-button:active
+{
+    top: 15px;
+}
+
+.show-menu-button .line{
+  width: 50px;
+  height: 5px;
+  background-color: black;
+  display: block;
+  margin: 8px auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.show-menu-button.is-active .line:nth-child(2){
+  opacity: 0;
+}
+
+.show-menu-button.is-active .line:nth-child(1){
+  -webkit-transform: translateY(13px) rotate(45deg);
+  -ms-transform: translateY(13px) rotate(45deg);
+  -o-transform: translateY(13px) rotate(45deg);
+  transform: translateY(13px) rotate(45deg);
+}
+
+.show-menu-button.is-active .line:nth-child(3){
+  -webkit-transform: translateY(-13px) rotate(-45deg);
+  -ms-transform: translateY(-13px) rotate(-45deg);
+  -o-transform: translateY(-13px) rotate(-45deg);
+  transform: translateY(-13px) rotate(-45deg);
+}
+
+.visible-menu
+{
+
+    opacity: 100;
+    left: 0;
+}
+
+/* Page Hero */
+
+.page-hero
+{
+    line-height: 400px;
+
+    height: 400px;
+
+    text-align: center;
+
+    background: whitesmoke;
+}
+
+/* Page Footer */
+footer small
+{
+    font-family: 'Roboto', sans-serif;
+    font-size: 10px;
+
+    display: block;
+
+    margin: 0 auto;
+
+    text-align: center;
+    letter-spacing: .5px;
+    text-transform: uppercase;
+}
+
+/* Media Queries */
+
+
+@media screen and (min-width: 750px) {
+
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+[class|=col] {
+  margin: 15px 0;
+}
+
+.col-12 {
+  width: 100%;
+
+}
+
+.col-6 {
+   width: calc(100%/2 - 15px);
+}
+
+.col-4 {
+  width: calc(100%/3 - 15px);
+}
+
+.col-3 {
+  width: calc(100%/4 - 15px);
+}
+
+
+
+
+}
+
+
+@media screen and (min-width: 900px)
+{
+    .page-nav
+    {
+        display: flex;
+
+        justify-content: space-between;
+    }
+
+    .page-links-wrapper
+    {
+        position: static;
+
+        display: flex;
+
+        width: auto;
+        padding: 0;
+
+        opacity: 100;
+        background: none;
+    }
+
+    .page-links-wrapper a
+    {
+        line-height: 60px;
+        line-height: 60px;
+
+        height: 100%;
+        padding: 0 13px;
+
+        border-top: none;
+    }
+
+    .show-menu-button
+    {
+        display: none;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* trailing whitespace madness */
