@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 230.5 196.6">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #f1f2f2;
+        stroke: #d1d3d4;
+        stroke-miterlimit: 10;
+      }
+    </style>
+  </defs>
+  <title>placeholder image</title>
+  <g id="Layer_2" data-name="Layer 2">
+    <g id="Layer_1-2" data-name="Layer 1">
+      <g>
+        <rect class="cls-1" x="0.5" y="0.5" width="229.5" height="195.6"/>
+        <line class="cls-1" x1="0.88" y1="1.06" x2="230" y2="196.1"/>
+        <line class="cls-1" x1="0.5" y1="196.1" x2="229.59" y2="1.06"/>
+      </g>
+    </g>
+  </g>
+</svg>
