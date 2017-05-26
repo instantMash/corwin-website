@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 70.72 57.47">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+      }
+
+      .cls-2 {
+        clip-path: url(#clip-path);
+      }
+
+      .cls-3 {
+        fill: #231f20;
+      }
+    </style>
+    <clipPath id="clip-path" transform="translate(0 0)">
+      <rect class="cls-1" width="70.72" height="57.47"/>
+    </clipPath>
+  </defs>
+  <title>twitter</title>
+  <g id="Layer_2" data-name="Layer 2">
+    <g id="Layer_1-2" data-name="Layer 1">
+      <g id="twitter">
+        <g class="cls-2">
+          <g class="cls-2">
+            <path class="cls-3" d="M70.72,6.8a29,29,0,0,1-8.33,2.28,14.55,14.55,0,0,0,6.38-8,29.08,29.08,0,0,1-9.21,3.52A14.52,14.52,0,0,0,34.83,17.82,41.2,41.2,0,0,1,4.92,2.66,14.52,14.52,0,0,0,9.41,22a14.42,14.42,0,0,1-6.57-1.81c0,.06,0,.12,0,.18A14.52,14.52,0,0,0,14.48,34.62a14.54,14.54,0,0,1-6.55.25A14.52,14.52,0,0,0,21.48,44.95a29.11,29.11,0,0,1-18,6.21A29.1,29.1,0,0,1,0,51a41.06,41.06,0,0,0,22.24,6.52c26.69,0,41.28-22.11,41.28-41.28,0-.63,0-1.25,0-1.88A29.45,29.45,0,0,0,70.72,6.8" transform="translate(0 0)"/>
+          </g>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

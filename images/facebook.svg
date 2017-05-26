@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 36.57 70.72">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+      }
+
+      .cls-2 {
+        clip-path: url(#clip-path);
+      }
+
+      .cls-3 {
+        fill: #231f20;
+        fill-rule: evenodd;
+      }
+    </style>
+    <clipPath id="clip-path" transform="translate(0 0)">
+      <rect class="cls-1" width="36.57" height="70.72"/>
+    </clipPath>
+  </defs>
+  <title>facebook</title>
+  <g id="Layer_2" data-name="Layer 2">
+    <g id="Layer_1-2" data-name="Layer 1">
+      <g id="facebook">
+        <g class="cls-2">
+          <g class="cls-2">
+            <path class="cls-3" d="M8.13,39.08V70.72H23.52V39.23H34l2.54-13.13H23.63V16.48a2.85,2.85,0,0,1,2.86-3.11H34V0H20C15.19,0,8.07,5.93,8.07,12.24V25.73H0V39Z" transform="translate(0 0)"/>
+          </g>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

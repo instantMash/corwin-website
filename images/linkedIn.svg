@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 70.72 69.73">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+      }
+
+      .cls-2 {
+        clip-path: url(#clip-path);
+      }
+
+      .cls-3 {
+        fill: #231f20;
+      }
+    </style>
+    <clipPath id="clip-path" transform="translate(0 0)">
+      <rect class="cls-1" width="70.72" height="69.73"/>
+    </clipPath>
+  </defs>
+  <title>linkedIn</title>
+  <g id="Layer_2" data-name="Layer 2">
+    <g id="Layer_1-2" data-name="Layer 1">
+      <g id="linkedIn">
+        <g class="cls-2">
+          <g class="cls-2">
+            <path class="cls-3" d="M16,7.56c0,4.18-3.08,7.56-8.16,7.56A7.45,7.45,0,0,1,0,7.56C0,3.29,3.19,0,8.06,0s7.86,3.29,8,7.56M.4,21.09H15.52V69.73H.4ZM24.57,36.61c0-6.07-.2-11.14-.4-15.51H37.3l.7,6.76h.3a17.46,17.46,0,0,1,15-7.86c9.94,0,17.4,6.66,17.4,21V69.73H55.6v-27c0-6.27-2.19-10.54-7.66-10.54-4.18,0-6.66,2.88-7.76,5.67a10.85,10.85,0,0,0-.5,3.78V69.73H24.57Z" transform="translate(0 0)"/>
+          </g>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

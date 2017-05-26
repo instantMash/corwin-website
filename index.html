@@ -93,7 +93,40 @@
 
 
 <footer>
+<div class="grid">
+<div class="row">
+  <div class="col-4">
+    <h3>Connect with Us</h3>
+    <a class="social-link instagram" href="https://www.instagram.com/corwinbeverage">Instagram</a>
+    <a class="social-link linkedin" href="https://www.linkedin.com/company/corwin-beverage-company">LinkedIn</a><br />
+    <a class="social-link twitter" href="https://twitter.com/CorwinBeverage">Twitter</a>
+    <a class="social-link facebook" href="https://www.facebook.com/CorwinBeverage/">Facebook</a>
+  </div>
+
+  <div class="col-4">
+    <nav class="footer-nav">
+      <a href="#">Home</a>
+        <a href="#">Products</a>
+        <a href="#">Services</a>
+        <a href="#">Become a Customer</a>
+        <a href="#">About Us</a>
+        <a href="#">Careers</a>
+        <a href="#">Contact Us</a>
+        <a href="#">Blog</a>
+    </nav>
+  </div>
+
+  <div class="col-4">
+    <h3>Contact Us</h3>
+    <p class="footer-address"><strong>Address</strong>:<br /> 219 S Timm Rd, Ridgefield, WA 98642</p>
+    <p class="footer-address"><strong>Phone</strong>: (360) 696-0766</p>
+    <div id="map"></div>
+</div>
+
+</div>
+
   <small>© Copyright 2017, Corwin Beverage Company</small>
+</div>
 </footer>
 
 <script>
@@ -107,10 +140,26 @@ showMenu.onclick = function(){
 
 
 };
-
-
 </script>
-
+<script>
+var map;
+  function initMap() {
+     map = new google.maps.Map(document.getElementById('map'), {
+      center: {lat: 45.813553, lng: -122.686414},
+      zoom: 8,
+    });
+    var corwin = {lat: 45.813553, lng: -122.686414};
+    var marker = new google.maps.Marker({
+      position: corwin,
+      map: map,
+      title: "Corwin Beverage"
+    });
+  }
+</script>
+<!-- Google Map API -->
+<script async defer
+  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBmrqvE0MCXgLXc_ILYaRbdPOK1Pz_ApnE&callback=initMap">
+</script>
 
 </body>
 </html>
