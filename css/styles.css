@@ -67,6 +67,11 @@ button::-moz-focus-inner
 
 /* Layout */
 
+/* Set max-width */
+.grid, .page-nav {
+  max-width: 1000px;
+}
+
 .main-content
 {
     width: 90%;
@@ -379,7 +384,7 @@ footer small
 
     display: block;
 
-    margin: 0 auto;
+    margin: 15px auto;
 
     text-align: center;
     letter-spacing: .5px;

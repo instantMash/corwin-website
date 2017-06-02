@@ -121,6 +121,7 @@
     <p class="footer-address"><strong>Address</strong>:<br /> 219 S Timm Rd, Ridgefield, WA 98642</p>
     <p class="footer-address"><strong>Phone</strong>: (360) 696-0766</p>
     <div id="map"></div>
+    <a class="link-button" target="_blank" href="https://www.google.com/maps/place/Corwin+Beverages/@45.8133369,-122.6863713,15z/data=!4m12!1m6!3m5!1s0x0:0x9e2afa822c3ff32e!2sCorwin+Beverages!8m2!3d45.8133369!4d-122.6863713!3m4!1s0x0:0x9e2afa822c3ff32e!8m2!3d45.8133369!4d-122.6863713">Directions</a>
 </div>
 
 </div>
@@ -147,6 +148,7 @@ var map;
      map = new google.maps.Map(document.getElementById('map'), {
       center: {lat: 45.813553, lng: -122.686414},
       zoom: 8,
+      fullscreenControl: 1
     });
     var corwin = {lat: 45.813553, lng: -122.686414};
     var marker = new google.maps.Marker({
