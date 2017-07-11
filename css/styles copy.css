@@ -60,30 +60,46 @@ button::-moz-focus-inner
 
 /* Utility */
 
-  .no-padding {
-    padding: 0!important;
-  }
-
+.row-reverse
+{
+    flex-direction: row-reverse;
+}
 
 /* Layout */
 
-.row {
-  display: flex;
-  flex-direction: column;
-
+/* Set max-width */
+.grid, .page-nav {
+  max-width: 1000px;
 }
 
-.col {
-  padding: 14px;
+.main-content
+{
+    width: 90%;
+    margin: 0 auto;
+    padding: 25px 0;
 }
 
-/* Make the site header show up in front of the hero image so that that the flyout menu doesn't end up behind the hero image. */
-.site-header {
-  position: relative;
-  z-index: 1;
+.grid
+{
+    width: 90%;
+    margin: 0 auto;
 }
 
+.row
+{
+    margin-top: 45px;
+    padding-top: 25px;
 
+    border-top: 1px solid grey;
+}
+
+.row:first-child
+{
+    margin-top: 15px;
+    padding-top: 0;
+
+    border-top: none;
+}
 
 /* Typography and Buttons */
 
@@ -266,91 +282,26 @@ p
 .page-hero
 {
 
-    height: 500px;
+    height: 0; /* Uncle Dave's ol' padded box */
+    padding-bottom: 50%;
 
     text-align: center;
     box-shadow: inset 0 8px 8px rgba(0,0,0,.2);
 
-    background: #0365d4 url('../images/corwin-building.jpg') center 90px no-repeat;
+    background: url('../images/corwin-building.jpg') center bottom no-repeat;
+    background-size: contain;
     position: relative;
-
-
-    background-attachment: fixed;
-    outline: 1px solid blue;
-
 }
 
 .page-hero p {
   background: url('../images/corwin-badge.svg') center center no-repeat;
-  width: 85%;
+  width: 36%;
   height: 100%;
   position: absolute;
-  left: 7.5%;
+  left: 32%;
   margin: 0;
   text-indent: -9999px;
   box-shadow
-}
-
-/* Homepage background images */
-
-.homepage-image-background {
-  height: 400px;
-  width: 100%;
-  background: grey;
-  }
-
-.corwin-truck-background {
-
-  background: url('../images/corwin-truck-background.jpg')  no-repeat grey;
-
-}
-
-.beer-wine-background {
-  background: url('../images/craft-beer-and-wine.jpg')  no-repeat grey;
-
-}
-
-/* Corwin Highlights */
-
-.corwin-highlights {
-  background: whitesmoke;
-}
-
-.corwin-highlights-list {
-  margin: 40px auto 50px auto;
-  padding: 0;
-  font-family: 'Roboto', sans-serif;
-  font-size: 15px;
-  line-height: 17px;
-  width: 100%;
-  max-width: 1000px;
-}
-
-.corwin-highlights-list li {
-  list-style-type: none;
-  padding: 210px 0 0 0;
-  margin: 25px 0 0 0;
-  background-repeat: no-repeat;
-  background-position: center top;
-  background-size: 200px 200px;
-  text-align: center;
-}
-
-.employee-icon {
-  background-image: url('../images/employees-icon.svg');
-}
-
-.map-icon {
-  background-image: url('../images/washington-icon.svg');
-}
-
-.calendar-icon {
-  background-image: url('../images/calendar-icon.svg');
-}
-
-.leaf-icon {
-  background-image: url('../images/leaf-icon.svg');
-
 }
 
 /* Page Footer */
@@ -362,9 +313,21 @@ footer
     background: whitesmoke;
 }
 
+footer .row
+{
+    margin-top: 0;
+}
+
 footer h3
 {
     margin-top: 0;
+}
+
+footer [class|=col]
+{
+    padding-top: 25px;
+
+    text-align: center;
 }
 
 .social-link
@@ -450,42 +413,10 @@ footer small
 
 /* Media Queries */
 
-@media screen and (min-width: 600px) {
-  .corwin-highlights-list {
-    display: flex;
-    flex-wrap: wrap;
-  }
 
-  .corwin-highlights-list li {
-    width: 50%;
-  }
-
-}
-
-
-
-@media screen and (min-width: 750px) {
-
-    .row
-    {
-      flex-direction: row;
-    }
-
-    .row-reverse {
-      flex-direction: row-reverse
-    }
-
-    .col {
-      width: 50%;
-      padding: 32px;
-    }
-
-    .homepage-image-background {
-      width: 50%;
-      min-height: 320px;
-}
-
-    /* Utility Classes */
+@media screen and (min-width: 750px)
+{
+    /* Utility */
 
     .right-align
     {
@@ -497,8 +428,40 @@ footer small
         text-align: left;
     }
 
+    .row
+    {
+        display: flex;
 
+        border-top: none;
 
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    [class|=col]
+    {
+        margin: 15px 0;
+    }
+
+    .col-12
+    {
+        width: 100%;
+    }
+
+    .col-6
+    {
+        width: calc(100%/2 - 15px);
+    }
+
+    .col-4
+    {
+        width: calc(100%/3 - 15px);
+    }
+
+    .col-3
+    {
+        width: calc(100%/4 - 15px);
+    }
 }
 
 
@@ -539,12 +502,6 @@ footer small
     {
         display: none;
     }
-
-    .corwin-highlights-list li {
-      width: 25%;
-    }
-
-
 }
 
 
