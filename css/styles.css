@@ -3,6 +3,7 @@
     box-sizing: border-box;
 }
 
+
 body
 {
     margin: 0;
@@ -267,23 +268,24 @@ p
     text-align: center;
     box-shadow: inset 0 8px 8px rgba(0,0,0,.2);
 
-    background: #0365d4 url('../images/corwin-building.jpg') center 90px no-repeat;
+    background: #0365d4 url('../images/corwin-building-small.jpg') center 90px no-repeat;
+    background-attachment: fixed;
+
     position: relative;
 
 
-    background-attachment: fixed;
 
 }
 
 .page-hero p {
-  background: url('../images/corwin-badge.svg') center center no-repeat;
+  background: url('../images/corwin-badge-vertical.svg') center center no-repeat;
   width: 85%;
   height: 100%;
   position: absolute;
   left: 7.5%;
   margin: 0;
   text-indent: -9999px;
-  box-shadow
+  max-width: 1130px;
 }
 
 /* Homepage background images */
@@ -461,6 +463,15 @@ footer small
 
 @media screen and (min-width: 750px) {
 
+    .page-hero {
+      background: #0365d4 url('../images/corwin-building.jpg') center 90px no-repeat;
+      background-attachment: fixed;
+    }
+
+    .page-hero p {
+      background: url('../images/corwin-badge.svg') center center no-repeat;
+    }
+
     .row
     {
       flex-direction: row;
@@ -492,7 +503,9 @@ footer small
         text-align: left;
     }
 
-
+    .alignment-kludge { /* On the homepage, the row below Products isn't lining up correctly. The flexbox height of Products is taller than it should be, which makes the images not line up between rows */
+      margin-top: -4px;
+    }
 
 }
 
