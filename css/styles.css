@@ -305,7 +305,10 @@ p
 
 .beer-wine-background {
   background: url('../images/craft-beer-and-wine.jpg')  no-repeat grey;
+}
 
+.team-corwin-background {
+  background: url('../images/company-photo.jpg') no-repeat grey;
 }
 
 /* Corwin Highlights */
